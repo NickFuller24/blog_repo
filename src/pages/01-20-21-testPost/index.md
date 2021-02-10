@@ -1,6 +1,6 @@
 ---
 path: '/test-post'
-title: 'First Test Blog Post'
+title: 'First Test Post'
 date: '01-20-21'
 ---
 
