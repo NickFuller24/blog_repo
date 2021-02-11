@@ -9,6 +9,6 @@ body {
   margin: 0;
 }
 
-Link.NavLink:hover {
-  color: red;
+.link:hover {
+  color: #95E4C3 !important; /* !important is needed to override the normal Link color attribute */
 }

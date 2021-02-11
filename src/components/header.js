@@ -47,8 +47,8 @@ const Header = ({ siteTitle }) => (
       </Link>
     </TitleWrapper>
     <NavLinksWrapper>
-      <Link to="#"
-        class="NavLink"
+      {/* <Link to="#"
+        class="link"
         style={{
           textDecoration: `none`,
           color: `#E5E5E5`,
@@ -56,9 +56,9 @@ const Header = ({ siteTitle }) => (
         }}
       > 
         Categories 
-      </Link>
+      </Link> */}
       <Link to="#"
-        class="NavLink"
+        class="link"
         style={{
           textDecoration: `none`,
           color: `#E5E5E5`,
