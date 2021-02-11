@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
-import styled from "styled-components";
+import styled from "styled-components"
+import IndexPost from "../components/indexPost"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -14,13 +15,14 @@ const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <h2>Index</h2>
+    <IndexPost/>
     { data.allMarkdownRemark.edges.map(post => (
       <LinkWrapper>
         <Link 
           key={post.node.id}
           href={post.node.frontmatter.path}>{post.node.frontmatter.title}
         </Link>
-        </LinkWrapper>
+      </LinkWrapper>
     ))}
   </Layout>
 )

@@ -32,6 +32,10 @@ const NavLinksWrapper = styled.div`
   display: flex;              // This line and the next two align the Link vertically
   height: 100%;
   align-items: center;
+
+  :hover {
+    fill: #95E4C3; 
+  }
 `;
 
 const Header = ({ siteTitle }) => (
