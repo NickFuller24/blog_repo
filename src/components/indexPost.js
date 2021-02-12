@@ -44,7 +44,7 @@ const PostDateContainer = styled.div`
   grid-row-start: 3;
   grid-row-end: 4;
   font-size: 1rem;
-  color: #95E4C3;
+  color: #2ACC88;
   font-weight: 500;
 `;
 
@@ -57,6 +57,7 @@ const PostDescription = styled.p`
   font-weight: 500;
   color: #4D4F65;
 `;
+
 const IndexPost = () => (
   <PostContainer>
     <Title>
