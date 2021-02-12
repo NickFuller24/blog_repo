@@ -38,29 +38,41 @@ const PostImageContainer = styled.div`
   grid-row-end: 3;
 `;
 
+const PostDateContainer = styled.div`
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  font-size: 1rem;
+  color: #95E4C3;
+  font-weight: 500;
+`;
+
+const PostDescription = styled.p`
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #4D4F65;
+`;
 const IndexPost = () => (
   <PostContainer>
     <Title>
       Blog Post Title
     </Title>
     <PostImageContainer>
-      <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+      <h2>Image Goes Here</h2>
     </PostImageContainer>
+    <PostDateContainer>
+      00/11/2233
+    </PostDateContainer>
+    <PostDescription>
+      This will be some random description of this really cool blog post that I made. When clicked, it will bring the user to the post
+    </PostDescription>
   </PostContainer>
 )
 
-// This is from the image.js file that came with the gatsby default starter. Gatsby has a built
-// in process to optimize images
-const data = useStaticQuery(graphql`
-  query {
-    placeholderImage: file(relativePath: { eq: "gatsby-icon.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`)
 
 export default IndexPost
